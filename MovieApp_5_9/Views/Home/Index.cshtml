@@ -1,0 +1,25 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="jumbotron">
+    <h1>Movie Rental App</h1>
+    <p class="lead">Register customers, add movies, and checkout rentals from this app</p>
+</div>
+
+<div class="row">
+    <div class="col-md-4">
+        <h2>@Html.ActionLink("Customers","Index","Customers")</h2>
+        <p>
+            Table that holds customer information including the customer's primary key id, first name, and last name.
+        </p>
+    </div>
+    <div class="col-md-4">
+        <h2>@Html.ActionLink("Movies", "Index", "Movies")</h2>
+        <p>Table that holds movie information including the movie's primary key id, title, and director.</p>
+    </div>
+    <div class="col-md-4">
+        <h2>@Html.ActionLink("Rentals", "Index", "Rentals")</h2>
+        <p>The rentals table stores the rental transaction id number, as well as the customer who rents the movie, and the movie info (both as foreign keys).</p>
+    </div>
+</div>
