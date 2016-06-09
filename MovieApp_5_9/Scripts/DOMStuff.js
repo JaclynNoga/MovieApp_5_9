@@ -5,4 +5,5 @@
 function changeLikes() {
     var likesParagraph = document.getElementById('likes');
     likesParagraph.innerHTML = "I like dogs and cats"
+
 }
